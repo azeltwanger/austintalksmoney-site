@@ -44,3 +44,4 @@ form.card.ok .done{display:flex}
 .foot a{color:var(--faint)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (max-width:760px){.hero{padding-top:24px;gap:40px}.copy{gap:18px}form.card{padding:24px}}
+.done .next{display:inline-block;margin-top:8px;font-size:15px;font-weight:600;color:var(--accent);text-decoration:none}.done .next:hover{color:#FF8A4C}
