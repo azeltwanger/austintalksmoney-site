@@ -48,12 +48,12 @@ form.card.ok .done{display:flex}
 @keyframes rise{from{opacity:.001;transform:translateY(8px);filter:blur(5px)}to{opacity:1;transform:none;filter:blur(0)}}
 @keyframes glow{0%{box-shadow:0 0 0 0 rgba(255,97,20,0),0 0 0 rgba(255,97,20,0)}60%{box-shadow:0 0 0 7px rgba(255,97,20,.18),0 0 26px rgba(255,97,20,.6)}100%{box-shadow:0 0 0 5px rgba(255,97,20,.12),0 0 18px rgba(255,97,20,.45)}}
 @media (prefers-reduced-motion:no-preference){
-.top{animation:rise .6s cubic-bezier(.2,.8,.2,1) both}
+.top{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
 .mark{animation:glow 1.2s cubic-bezier(.2,.8,.2,1) .2s both}
-.copy>*{animation:rise .6s cubic-bezier(.2,.8,.2,1) both}
-.copy>:nth-child(2){animation-delay:.04s}.copy>:nth-child(3){animation-delay:.1s}.copy>:nth-child(4){animation-delay:.16s}
-form.card{animation:rise .7s cubic-bezier(.2,.8,.2,1) .12s both}
-.points{animation:rise .7s cubic-bezier(.2,.8,.2,1) .22s both}
+.copy>*{animation:rise .85s cubic-bezier(.2,.8,.2,1) both}
+.copy>:nth-child(2){animation-delay:.07s}.copy>:nth-child(3){animation-delay:.16s}.copy>:nth-child(4){animation-delay:.25s}
+form.card{animation:rise .95s cubic-bezier(.2,.8,.2,1) .2s both}
+.points{animation:rise .95s cubic-bezier(.2,.8,.2,1) .34s both}
 .card button{transition:filter .15s,transform .12s}
 .card button:active{transform:scale(.98)}
 form.card.ok .done{animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
@@ -61,10 +61,10 @@ form.card.ok .done{animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
 /* Reduce Motion: the same focus-in without any movement (opacity and blur only), staggered. */
 @keyframes focusin{from{opacity:.001;filter:blur(8px)}to{opacity:1;filter:blur(0)}}
 @media (prefers-reduced-motion:reduce){
-.top{animation:focusin .7s cubic-bezier(.2,.8,.2,1) both}
-.copy>*{animation:focusin .9s cubic-bezier(.2,.8,.2,1) both}
-.copy>:nth-child(2){animation-delay:.08s}.copy>:nth-child(3){animation-delay:.18s}.copy>:nth-child(4){animation-delay:.28s}
-form.card{animation:focusin 1s cubic-bezier(.2,.8,.2,1) .2s both}
-.points{animation:focusin 1s cubic-bezier(.2,.8,.2,1) .34s both}
+.top{animation:focusin .9s cubic-bezier(.2,.8,.2,1) both}
+.copy>*{animation:focusin 1.2s cubic-bezier(.2,.8,.2,1) both}
+.copy>:nth-child(2){animation-delay:.12s}.copy>:nth-child(3){animation-delay:.26s}.copy>:nth-child(4){animation-delay:.4s}
+form.card{animation:focusin 1.3s cubic-bezier(.2,.8,.2,1) .28s both}
+.points{animation:focusin 1.3s cubic-bezier(.2,.8,.2,1) .48s both}
 form.card.ok .done{animation:focusin .5s ease-out both}
 }
