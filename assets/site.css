@@ -58,3 +58,13 @@ form.card{animation:rise .7s cubic-bezier(.2,.8,.2,1) .12s both}
 .card button:active{transform:scale(.98)}
 form.card.ok .done{animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
 }
+/* Reduce Motion: no movement or blur, just a soft staggered fade so the page still eases in. */
+@keyframes fade{from{opacity:.001}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+.top{animation:fade .5s ease-out both}
+.copy>*{animation:fade .6s ease-out both}
+.copy>:nth-child(2){animation-delay:.06s}.copy>:nth-child(3){animation-delay:.12s}.copy>:nth-child(4){animation-delay:.18s}
+form.card{animation:fade .6s ease-out .14s both}
+.points{animation:fade .6s ease-out .24s both}
+form.card.ok .done{animation:fade .4s ease-out both}
+}
